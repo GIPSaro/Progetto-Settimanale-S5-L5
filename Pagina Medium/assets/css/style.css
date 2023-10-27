@@ -17,7 +17,8 @@ header h1 {
 }
 header h3 {
   margin: 0;
-  font-size: 23px;
+
+  font-family: "Roboto", sans-serif;
   font-weight: 400;
   padding-bottom: 2em;
   width: 65%;
@@ -33,8 +34,16 @@ nav,
 header {
   background-color: #ffc017;
 }
+#navContainer nav {
+  display: flex;
+  flex-direction: row;
+  flex-grow: 1;
+}
 #navContainer {
   display: flex;
+
+  flex-direction: row;
+  justify-content: space-around;
   border-bottom: 1px solid #191919;
   position: fixed;
   font-family: "Robotico", sans-serif;
@@ -42,7 +51,6 @@ header {
   z-index: 1;
   width: 100%;
   background-color: #ffc017;
-  transition: background-color 1s;
 }
 
 nav {
@@ -51,6 +59,7 @@ nav {
   align-items: center;
   padding: 1em;
 }
+
 nav img {
   cursor: pointer;
 }
@@ -58,6 +67,7 @@ ul {
   display: flex;
   list-style-type: none;
   align-items: center;
+  gap: 10px;
 }
 #stayContainer {
   display: flex;
@@ -98,8 +108,9 @@ header svg {
   width: 100%;
   height: 100%;
   display: flex;
-  translate: 102px -14px 0px;
-  scale: 1.1;
+  visibility: hidden;
+  /* translate: 102px -14px 0px;
+  scale: 1.1; */
 }
 h3 + button {
   padding: 0.5em 3em;
@@ -160,7 +171,6 @@ main h4 {
 }
 
 main p {
-  font-weight: bold;
   font-family: "Roboto", sans-serif;
 }
 
@@ -230,7 +240,10 @@ main h5 {
 .infoArticle div {
   display: flex;
 }
-
+.infoArticle h2 {
+  font-weight: 900;
+  font-size: larger;
+}
 p:nth-of-type(3) {
   display: flex;
   background-color: lightgray;
@@ -272,11 +285,10 @@ h2 {
   cursor: pointer;
 }
 #discover {
+  width: 50%;
   display: flex;
   padding-left: 3em;
   position: sticky;
-  top: 4em;
-  align-self: flex-start;
 }
 #discover p {
   font-weight: 700;
