@@ -1,0 +1,298 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&family=Spectral&display=swap");
+
+html,
+body,
+main {
+  display: flex;
+  flex-direction: column;
+  font-family: "Roboto", sans-serif;
+}
+header h1 {
+  font-family: "Spectral", sans-serif;
+  margin: 0;
+  padding-bottom: 0.3rem;
+  font-size: 94px;
+  font-weight: 400;
+  line-height: 1;
+}
+header h3 {
+  margin: 0;
+  font-size: 23px;
+  font-weight: 400;
+  padding-bottom: 2em;
+  width: 65%;
+}
+header button {
+  font-family: "Roboto", sans-serif;
+}
+nav,
+#trendingContainer #section2 {
+  width: 62.5%;
+  margin: auto;
+}
+header {
+  background-color: #ffc017;
+}
+#navContainer {
+  display: flex;
+  border-bottom: 1px solid #191919;
+  position: fixed;
+  font-family: "Robotico", sans-serif;
+  top: 0;
+  z-index: 1;
+  width: 100%;
+  background-color: #ffc017;
+  transition: background-color 1s;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1em;
+}
+nav img {
+  cursor: pointer;
+}
+ul {
+  display: flex;
+  list-style-type: none;
+  align-items: center;
+}
+#stayContainer {
+  display: flex;
+  border-bottom: 1px solid #191919;
+  height: 450px;
+  margin-top: 3.8em;
+}
+#stay {
+  margin-left: 18.5%;
+  display: flex;
+  position: relative;
+  height: 100%;
+  left: -106px;
+}
+ul {
+  padding: 0.1em;
+  font-family: "Spectral", sans-serif;
+}
+li button {
+  padding: 0.7em 1.4em;
+  background-color: #191919;
+  color: white;
+  border-radius: 30px;
+  transition: background-color 1s;
+  cursor: pointer;
+}
+a {
+  text-decoration: none;
+  color: #191919;
+}
+#stay > div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+header svg {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  translate: 102px -14px 0px;
+  scale: 1.1;
+}
+h3 + button {
+  padding: 0.5em 3em;
+  background-color: #191919;
+  color: white;
+  font-size: 1.2em;
+  border-radius: 30px;
+  cursor: pointer;
+}
+#M {
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+/* header svg {
+  position: relative;
+  left: 249px;
+  top: -12px;
+} */
+#section1 {
+  display: flex;
+  border-bottom: 1px solid lightgray;
+  margin-bottom: 5em;
+}
+main {
+  padding-top: 35px;
+  padding-left: 80px;
+  font-family: "Roboto", sans-serif;
+}
+#trending {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+}
+#trending div {
+  flex-basis: 33.33%;
+  display: flex;
+}
+.trendingCard {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 10;
+  height: 100%;
+}
+.trendingCard div {
+  display: flex;
+  align-items: center;
+}
+main h4 {
+  flex-grow: 1;
+  margin: 0;
+  font-size: 2em;
+  color: lightgray;
+}
+#titleTrending {
+  display: flex;
+  align-items: center;
+}
+
+main p {
+  font-weight: bold;
+  font-family: "Roboto", sans-serif;
+}
+
+.trendingImg {
+  width: 25px;
+  height: 25px;
+  border-radius: 90px;
+  margin-right: 0.5em;
+  cursor: pointer;
+}
+
+.trendingImg + p {
+  display: flex;
+  font-size: 0.8em;
+  font-weight: 600;
+  width: 80%;
+  cursor: pointer;
+}
+
+main h5 {
+  margin: 0;
+  margin-top: 7px;
+  margin-bottom: 7px;
+  width: 70%;
+  width: 80%;
+  font-weight: bold;
+  font-size: 0.9em;
+  cursor: pointer;
+}
+
+.timeArticle {
+  padding-bottom: 4em;
+  font-size: 0.8em;
+  color: gray;
+}
+.timeArticle img {
+  cursor: pointer;
+}
+
+/*article*/
+
+.article {
+  display: flex;
+  margin-bottom: 3em;
+}
+
+#section2 {
+  display: flex;
+}
+#containerArticle {
+  flex-basis: 70%;
+}
+.articleImg img {
+  width: 200px;
+  height: 150px;
+  cursor: pointer;
+}
+.infoArticle {
+  flex-basis: 75%;
+}
+.articleImg {
+  flex-basis: 25%;
+}
+.articleHeader {
+  align-items: center;
+}
+.infoArticle div {
+  display: flex;
+}
+
+p:nth-of-type(3) {
+  display: flex;
+  background-color: lightgray;
+  padding: 0.4em 0.6em;
+  border-radius: 30px;
+  cursor: pointer;
+}
+.articleTime {
+  justify-content: space-between;
+}
+.articleFooterInfo {
+  align-items: center;
+  font-size: 0.8em;
+  color: gray;
+}
+h2 + p {
+  display: flex;
+  margin-top: 8px;
+  margin-bottom: 0;
+  cursor: pointer;
+  color: gray;
+}
+h2 {
+  margin: 0;
+  font-size: 1.3em;
+  font-weight: 700;
+  cursor: pointer;
+}
+.article img {
+  cursor: pointer;
+}
+/*buttom discover*/
+.btnDiscover {
+  background-color: white;
+  border: 1px solid lightgray;
+  padding: 0.5em 1em;
+  margin: 0.5em 0.1em 0.5em 0;
+  color: gray;
+  cursor: pointer;
+}
+#discover {
+  display: flex;
+  padding-left: 3em;
+  position: sticky;
+  top: 4em;
+  align-self: flex-start;
+}
+#discover p {
+  font-weight: 700;
+  font-size: 0.9em;
+}
+#links ul {
+  flex-wrap: wrap;
+  padding: 0;
+}
+#links ul li {
+  padding: 0 1.5em 1em 0;
+  color: gray;
+  cursor: pointer;
+}
+#links {
+  border-top: 1px solid lightgray;
+  font-size: 0.9em;
+  margin-top: 2em;
+}
