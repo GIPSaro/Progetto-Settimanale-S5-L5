@@ -293,3 +293,6 @@ h2 {
   font-size: 0.9em;
   margin-top: 2em;
 }
+.invisible {
+  opacity: 0;
+}
